@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_activity_view"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_activity" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/title_activity_view" />
+
+    <LinearLayout
+        android:id="@+id/phone_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/order_help"
+                android:textColor="@color/text_home_color"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/order_help_num"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/list_divider" />
+
+        <ImageView
+            android:id="@+id/phone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="#20939393"
+            android:src="@drawable/ic_telephone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/phone_view"
+        android:background="@color/list_divider" />
+
+</RelativeLayout>

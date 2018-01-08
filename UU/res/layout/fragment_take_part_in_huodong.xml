@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.huiyoumall.uu.view.pullview.AbPullToRefreshView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mPullRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/tab_view_press" >
+
+        <ListView
+            android:id="@+id/my_isjoin_ListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#FFF4F4F4"
+            android:dividerHeight="1px"
+            android:fadingEdge="none" />
+    </com.huiyoumall.uu.view.pullview.AbPullToRefreshView>
+
+</LinearLayout>

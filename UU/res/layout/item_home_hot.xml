@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@drawable/popular_view_bg"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <com.huiyoumall.uu.image.SmartImageView
+        android:id="@+id/image_url"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_empty_bg" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:text="TT健身会所"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_18" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="【碧水龙庭】"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/address"
+                android:text="9000m"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/market_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/shop_price"
+                android:gravity="center"
+                android:text="¥35"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/btn_yuding"
+                android:layout_width="55dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/book_selector"
+                android:focusable="false"
+                android:text="@string/yuding"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/shop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="¥15"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/main_color" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

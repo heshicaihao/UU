@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UU</string>
+    <string name="copy_success">复制成功</string>
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="loading">加载中…</string>
+    <string name="loading_no_more">已加载全部</string>
+
+    <!-- 主页tab -->
+    <string name="yuding">预定</string>
+    <string name="huodong">活动</string>
+    <string name="zhaojl">找教练</string>
+    <string name="me">我</string>
+    <string name="title">这是顶部标题</string>
+    <string name="edit_search_hint">请输入场馆名字</string>
+    <string name="nearby_huodong">附近活动</string>
+    <string name="hot_merchant">热门球场</string>
+
+    <!-- 场馆详情 -->
+    <string name="ic_see">浏览</string>
+    <string name="qi">起</string>
+    <string name="now_yuding">立即预定</string>
+    <string name="can_yuding">可预定</string>
+    <string name="yuding_ed">已预订</string>
+    <string name="me_yuding">我的预定</string>
+    <string name="service_time">营业时间</string>
+    <string name="merchant_ntroduce">场地介绍：</string>
+    <string name="yund_facility">运动设施</string>
+    <string name="fuwu_facility">服务设施</string>
+    <string name="other_info">其他信息</string>
+    <string name="merchant_discuss">场馆评价</string>
+    <string name="more_discuss">查看全部评价</string>
+    <string name="no_discuss">没有评价</string>
+    <string name="other">其他</string>
+    <string name="sell">卖品</string>
+    <string name="bill">发票</string>
+    <string name="park">停车</string>
+    <string name="bus">公交</string>
+    <string name="choose_field">选择场地</string>
+    <string name="choose_field_ad">新用户减10返10</string>
+    <string name="search">搜索</string>
+    <string name="clear_history">清空历史记录</string>
+
+    <!-- 活动 -->
+    <string name="post_events">发布活动</string>
+    <string name="fast_post_events">快速发布</string>
+    <string name="hot_huodong">热门活动</string>
+    <string name="my_huodong">我的活动</string>
+    <string name="friend_huodong">找伙伴</string>
+    <string name="new_events">全新活动</string>
+    <string name="my_post_events">我的发布</string>
+    <string name="take_part_in">已参与</string>
+    <string name="complete_huodong">已结束</string>
+    <string name="new_post_events">发布新活动</string>
+    <string name="bird">羽毛球</string>
+    <string name="project">项目</string>
+    <string name="project_add">项目：</string>
+    <string name="huodong_level_hint">不限</string>
+    <string name="oblique_line">/</string>
+    <string name="time">时间</string>
+    <string name="place">地点</string>
+    <string name="people_num">人数</string>
+    <string name="mtheme">主题</string>
+    <string name="charge">费用</string>
+    <string name="consume">消费</string>
+    <string name="explain">说明</string>
+    <string name="explain_hint">请输入1000字以内的活动说明</string>
+    <string name="person_signature_explain">请保持在30字之内</string>
+    <string name="suggestion_explain">请保持在300字之内</string>
+    <string name="post_events_hint">请选择你的预定场馆</string>
+    <string name="random_play">随便玩</string>
+    <string name="train">培训</string>
+    <string name="game">比赛</string>
+    <string name="teach_me">教教我</string>
+    <string name="aa">AA制</string>
+    <string name="order_help">拨打客服电话：</string>
+    <string name="order_help_num">400-835-9188</string>
+    <string name="me_pay">我请客</string>
+    <string name="you_pay">你买单</string>
+    <string name="per_yuan_per_person">元/人</string>
+    <string name="no_merchant">您目前没有用于发布活动的场馆</string>
+    <string name="click">如需预定请点击</string>
+    <string name="sort">排序</string>
+    <string name="order_date">日期</string>
+    <string name="date_add">日期：</string>
+    <string name="order_total">总计</string>
+    <string name="account_manage">账号管理</string>
+    <string name="about_uu">关于UU运动</string>
+    <string name="opinion_retroaction">意见反馈</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="exit_login">退出登录</string>
+    <string name="still_pay">还需支付</string>
+    <string name="ten_pay">你需在10分钟完成支款</string>
+    <string name="uu_exercise">UU运动</string>
+    <string name="exercise">我运动</string>
+    <string name="health">我健康</string>
+    <string name="happy">我快乐</string>
+    <string name="copyright">深圳市优优俱乐部有限公司  版权所有</string>
+
+    <!-- 活动详情 -->
+    <string name="huodong_count">活动次数</string>
+    <string name="huodong_actor">参与人员</string>
+    <string name="huodong_sign_up">报名人员</string>
+    <string name="huodong_explain">活动说明</string>
+    <string name="huodong_name">活动名称：</string>
+    <string name="huodong_project">活动项目：</string>
+    <string name="huodong_time">活动时间：</string>
+    <string name="huodong_merchant">活动场馆：</string>
+    <string name="huodong_people_num">活动人数：</string>
+    <string name="huodong_theme">活动主题：</string>
+    <string name="huodong_charge">活动费用：</string>
+    <string name="unfold">展开</string>
+    <string name="now_participation">立即参与</string>
+    <string name="order_detail">订单详情</string>
+    <string name="pay">支付</string>
+    <string name="order">订单</string>
+    <string name="ensure">确定</string>
+    <string name="ensure_pay">确定支付</string>
+    <string name="ali_pay">支付宝支付</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="order_money">订单金额</string>
+    <string name="pay_money">支付金额</string>
+    <string name="money_add">金额：</string>
+    <string name="nonsupport_refund">不支持退款</string>
+    <string name="order_num">订单号</string>
+    <string name="order_time">下单时间</string>
+    <string name="no_pay">未支付</string>
+    <string name="order_state">订单状态</string>
+    <string name="check_field_info">请您认真核对场地信息</string>
+    <string name="choose_coupon">代金券</string>
+    <string name="use_voucher">使用代金券</string>
+    <string name="voucher">选择活动</string>
+    <string name="can_book">可预订</string>
+    <string name="booked">已预订</string>
+    <string name="my_book">我的预订</string>
+    <string name="my_u">我的U币</string>
+    <string name="u_rule">U币规则</string>
+    <string name="get_u">如何获取U币？</string>
+
+    <!-- 我 -->
+    
+    <string name="person_signature_next">个性签名：</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_coach">我的教练</string>
+    <string name="my_coupon">我的优惠券</string>
+    <string name="my_browse">我的浏览</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="seting_share">推荐给朋友</string>
+    <string name="tel_me">联系客服</string>
+    <string name="system_info">系统消息</string>
+    <string name="setting">设置</string>
+    
+    <string name="binding_phone">绑定手机号码</string>
+    <string name="amend_password">登记密码</string>
+    <string name="amend">修改</string>
+    <string name="old_password_hint">请输入旧密码</string>
+    <string name="new_password_hint">请输入新密码</string>
+    <string name="input_new_password_hint">请输入新密码</string>
+    <string name="password_to_hint">重复密码</string>
+    <string name="password_to_user_hint">密码不少于6位,由数字和字母组成</string>
+    <string name="commit">提交</string>
+    <string name="commit_order">提交订单</string>
+    <string name="input_telephone_init">请输入手机号</string>
+    <string name="input_code_init">请输入6位验证码</string>
+    <string name="send_code">发送验证码</string>
+    <string name="code">验证码</string>
+    <string name="code_add">验证码：</string>
+    <string name="nothing">暂无</string>
+    <string name="password_init">请输入密码</string>
+    <string name="login">登陆</string>
+    <string name="fast_register">快速注册</string>
+    <string name="register">注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="i_see_and_agree">我已阅读并同意</string>
+    <string name="uu_treaty">《UU运动用户协议》</string>
+
+    <!-- 用户信息 -->
+    <string name="head_portrait">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="city">城市</string>
+    <string name="person_signature">个性签名</string>
+    <string name="next">下一步</string>
+
+    <!-- 选择城市 -->
+    <string name="dingweichengshi">定位城市</string>
+    <string name="shenzhen">深圳</string>
+    <string name="no_city">没有开放的城市</string>
+    <string name="all_city">所有城市</string>
+    <string name="more_city">更多城市即将开放...</string>
+    <string name="retry_large_image"><u>加载失败，点击重试</u></string>
+
+    <!-- 下拉刷新  end -->
+    <string name="drop_down_list_header_default_text">Click to refresh&#8230;</string>
+    <string name="drop_down_list_header_pull_text">Drop Down to refresh&#8230;</string>
+    <string name="drop_down_list_header_release_text">Release to refresh&#8230;</string>
+    <string name="drop_down_list_header_loading_text">加载中&#8230;</string>
+    <string name="drop_down_list_footer_default_text"></string>
+    <string name="drop_down_list_footer_loading_text">加载中&#8230;</string>
+    <string name="drop_down_list_footer_no_more_text">无更多信息</string>
+    <string name="image_content">Image</string>
+    <string name="httpError">连接失败,请稍候再试</string>
+    <!-- 下拉刷新  end -->
+
+
+    <!-- 讯飞语音 -->
+    <string name="app_id">	55828b1c </string>
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+
+    <!-- 分享功能 -->
+    <string name="share_completed">分享成功</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_canceled">分享已取消</string>
+    <string name="canceled">取消</string>
+
+</resources>

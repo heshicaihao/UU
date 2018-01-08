@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="教练性别"
+            android:textColor="@color/text_home_color" />
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="不限"
+            android:textColor="@color/choose_text_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="男"
+            android:textColor="@color/choose_text_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="女"
+            android:textColor="@color/choose_text_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5px"
+        android:background="@color/list_divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:text="运动类型"
+        android:textColor="@color/text_home_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="不限"
+            android:textColor="@color/choose_text_color" />
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="健身"
+            android:textColor="@color/choose_text_color" />
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="游泳"
+            android:textColor="@color/choose_text_color" />
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="瑜伽"
+            android:textColor="@color/choose_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="网球"
+            android:textColor="@color/choose_text_color" />
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="高尔夫"
+            android:textColor="@color/choose_text_color" />
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:textColor="@color/choose_text_color" />
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:textColor="@color/choose_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/book_selector"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@color/btn_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/book_selector"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="@color/btn_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

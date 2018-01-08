@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="main_color">#ff6600</color>
+    <color name="text_home_color">#666666</color>
+    <color name="main_text_dark">#999999</color>
+    <color name="list_divider">#ebebeb</color>
+    <color name="tab_view_press">#f2f2f2</color>
+    <color name="text_press">#4c4c4c</color>
+    <color name="black">#000000</color>
+    <color name="already_booked">#d9d9d9</color>
+    <color name="can_reservation">#58bdf8</color>
+    <color name="my_booked">#fe8843</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_color">#40000000</color>
+    <color name="main_gray">#9A9A9A</color>
+    <color name="text_black">#939393</color>
+    <color name="shop_price">#FF8C00</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="default_text">#ff454545</color>
+    <color name="list_item_background_normal">@color/white</color>
+    <color name="list_divider_color">#DADADA</color>
+    <color name="horizontal_divider_color">#dddddd</color>
+    <color name="list_item_background_pressed">#efefef</color>
+    <color name="C8C8C8">#c8c8c8</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+
+</resources>

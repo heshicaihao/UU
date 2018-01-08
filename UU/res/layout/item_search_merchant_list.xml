@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/popular_view_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:text="TT健身会所"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:text="4.0分"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/shop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="¥15"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/price_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_10" />
+
+            <TextView
+                android:id="@+id/marker_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="¥35"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="【碧水龙庭】"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" 
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="9.15km"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_preference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/book_selector"
+            android:focusable="false"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="新用户买四送一 "
+            android:textSize="10sp"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/btn_text_color" />
+
+</LinearLayout>

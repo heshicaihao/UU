@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/background_img"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-100dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_empty_large_bg" />
+
+    <com.huiyoumall.uu.widget.PullScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:headerHeight="300dp"
+        app:headerVisibleHeight="100dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/scroll_view_head"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginTop="200dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/attention_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/book_selector"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="6dp"
+                        android:text="关注"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/user_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:text="静心，养心，专注用心静心，养心，专注用心静心，养心，专注用心"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/user_des"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/jiaolian_name_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="陈依依"
+                            android:textColor="@color/text_home_color"
+                            android:textSize="@dimen/text_size_18"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/jiaolian_feishu_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:text="5分"
+                            android:textColor="@color/text_home_color" />
+
+                        <ImageView
+                            android:id="@+id/jiaolian_feishu_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/jiaolian_feishu_text"
+                            android:src="@drawable/ic_grade_50" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/jiaolian_six_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/relativeLayout1"
+                        android:layout_alignLeft="@+id/user_des"
+                        android:layout_marginLeft="84dp"
+                        android:background="@drawable/bg_book_normal" >
+
+                        <TextView
+                            android:id="@+id/jiaolian_old_text"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_toRightOf="@+id/jiaolian_six_image"
+                            android:gravity="center"
+                            android:text="27"
+                            android:textColor="@color/text_home_color"
+                            android:textSize="10dp" />
+
+                        <ImageView
+                            android:id="@+id/jiaolian_six_image"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:paddingTop="3dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_activity_time" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/user_avatar"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="21dp"
+                    android:background="@color/white"
+                    android:contentDescription="@null"
+                    android:padding="1px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_head_portrait" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_horizontal_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp" >
+
+                        <TextView
+                            android:id="@+id/jiaolian_shengf_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="身份认证"
+                            android:textColor="@color/text_home_color"
+                            android:textSize="@dimen/text_size_18" />
+
+                        <ImageView
+                            android:id="@+id/jiaolian_shengf_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_vertical_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="授课时长"
+                            android:textColor="@color/text_home_color"
+                            android:textSize="@dimen/text_size_18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:text="2000"
+                            android:textColor="@color/main_color"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/view_horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="运动类型"
+                            android:textColor="@color/text_home_color"
+                            android:textSize="@dimen/text_size_18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:text="瑜伽"
+                            android:textColor="@color/text_home_color"
+                            android:textSize="@dimen/text_size_15" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_vertical_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="评价数"
+                            android:textColor="@color/text_home_color"
+                            android:textSize="@dimen/text_size_18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:text="8"
+                            android:textColor="@color/main_color"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/view_horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/jiaolian_xiang_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:text="授课区域"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/jiaolian_xiang_name_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:text="福田区 南山区 罗湖区 宝安区 "
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <include layout="@layout/view_horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:text="个人简历"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/jiaolian_geren_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:text="女性瑜伽。身体重要。女性瑜伽。身体重要女性瑜伽。身体重要女性瑜伽。身体重要女性瑜伽。"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <include layout="@layout/view_horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:text="教育经历"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="2006年考入北京体育学院特技表演班"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="2006年考入北京体育学院特技表演班"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="2006年考入北京体育学院特技表演班"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="2006年考入北京体育学院特技表演班"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <include layout="@layout/view_horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:text="获奖经历"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="2006年考入北京体育学院特技表演班"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="2006年考入北京体育学院特技表演班"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="2006年考入北京体育学院特技表演班"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="2006年考入北京体育学院特技表演班"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <include layout="@layout/view_horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:text="评价"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp" >
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.huiyoumall.uu.widget.PullScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#7f000000"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/book_selector"
+            android:padding="5dp"
+            android:text="购买课程"
+            android:textColor="@color/btn_text_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#7f000000"
+        android:padding="10dp"
+        android:src="@drawable/ic_back_normal" >
+    </ImageView>
+
+</RelativeLayout>

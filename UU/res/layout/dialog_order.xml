@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notice" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="您之前有未支付订单"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+    <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UU运动。前景羽毛球馆" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@color/white"
+         >
+
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期：" />
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20150609" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+         >
+
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="场地：" />
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:00——17:00" />
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2号场" />
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:text="    " />
+
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15:00——16:00" />
+
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3号场" />
+
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23元" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@color/white"
+         >
+
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共计：" />
+        <TextView
+            android:id="@+id/order_name_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="46.0元" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@color/white"
+         >
+
+        <TextView
+            android:id="@+id/cancel_order_text"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="取消支付" />
+        <TextView
+            android:id="@+id/promptly_order_text"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="立即支付" />
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+
+    <dimen name="text_size_6">6.0dip</dimen>
+    <dimen name="text_size_7">7.0dip</dimen>
+	<dimen name="text_size_8">8.0dip</dimen>
+	<dimen name="text_size_9">9.0dip</dimen>
+	<dimen name="text_size_10">10.0dip</dimen>
+	<dimen name="text_size_11">11.0dip</dimen>
+	<dimen name="text_size_12">12.0dip</dimen>
+	<dimen name="text_size_13">13.0dip</dimen>
+	<dimen name="text_size_14">14.0dip</dimen>
+	<dimen name="text_size_15">15.0dip</dimen>
+	<dimen name="text_size_16">16.0dip</dimen>
+	<dimen name="text_size_17">17.0dip</dimen>
+	<dimen name="text_size_18">18.0dip</dimen>
+	<dimen name="text_size_19">19.0dip</dimen>
+	<dimen name="text_size_20">20.0dip</dimen>
+	<dimen name="text_size_21">21.0dip</dimen>
+	<dimen name="text_size_22">22.0dip</dimen>
+	<dimen name="text_size_36">36.0dip</dimen>
+    
+</resources>

@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp" >
+
+        <LinearLayout
+            android:id="@+id/jiaolian_search"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_search"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="请输入教练信息"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp"
+        android:background="@color/list_divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#E5E5E5"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/area_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/list_divider"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/area_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_pull_down_normal" />
+
+            <TextView
+                android:id="@+id/area_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="距离"
+                android:textColor="@color/text_home_color" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider" />
+
+        <LinearLayout
+            android:id="@+id/wage_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/list_divider"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/wage_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_pull_down_normal" />
+
+            <TextView
+                android:id="@+id/wage_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="均价"
+                android:textColor="@color/text_home_color" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider" />
+
+        <LinearLayout
+            android:id="@+id/class_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/list_divider"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/class_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_pull_down_normal" />
+
+            <TextView
+                android:id="@+id/class_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="好评"
+                android:textColor="@color/text_home_color" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/list_divider" />
+
+        <LinearLayout
+            android:id="@+id/select_item"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/list_divider"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/class_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_pull_down_normal" />
+
+            <TextView
+                android:id="@+id/class_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="筛选"
+                android:textColor="@color/text_home_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="@color/list_divider" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

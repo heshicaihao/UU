@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="5dp" android:background="@drawable/popular_view_bg"
+	android:orientation="vertical">
+	<View android:layout_width="fill_parent" android:layout_height="0.5dp"
+		android:background="@color/tab_view_press"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UU运动.前进羽毛球馆"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/text_black" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="未支付"
+            android:textColor="@color/main_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/tab_view_press" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/project"
+            android:layout_alignBottom="@+id/project"
+            android:layout_alignParentRight="true"
+            android:text="暂无"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/nopey_authcode_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/code"
+            android:layout_alignBottom="@+id/code"
+            android:layout_toLeftOf="@+id/code"
+            android:text="@string/code_add"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/nopey_xiangmu_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/project_add"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nopey_xiangmu_name_text"
+            android:layout_alignBottom="@+id/nopey_xiangmu_name_text"
+            android:layout_toRightOf="@+id/nopey_xiangmu_name_text"
+            android:text="羽毛球"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/nopey_date_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nopey_xiangmu_name_text"
+            android:text="@string/date_add"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nopey_date_name_text"
+            android:layout_alignBottom="@+id/nopey_date_name_text"
+            android:layout_toRightOf="@+id/nopey_date_name_text"
+            android:text="2015-06-10"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nopey_price_name_text"
+            android:layout_alignBottom="@+id/nopey_price_name_text"
+            android:layout_alignParentRight="true"
+            android:text="45元"
+            android:textColor="@color/main_color" />
+
+        <TextView
+            android:id="@+id/nopey_price_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/date"
+            android:layout_alignBottom="@+id/date"
+            android:layout_toLeftOf="@+id/price"
+            android:text="@string/money_add"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/tab_view_press" />
+
+    <RelativeLayout
+         android:id="@+id/no_pay_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/nopey_cancel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/book_selector"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:text="@string/canceled"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/nopay_pay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/book_selector"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:text="@string/pay"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+</LinearLayout>

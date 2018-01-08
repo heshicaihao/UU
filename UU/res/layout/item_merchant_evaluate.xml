@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popular_view_bg"
+    android:padding="5dp" >
+
+    <FrameLayout
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center|top"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="5dp" >
+
+        <com.huiyoumall.uu.image.SmartImageView
+            android:id="@+id/member_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_empty_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:background="#80FFFFFF"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/member_age_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_female"
+                android:drawablePadding="5dp"
+                android:text="23岁"
+                android:textColor="@color/text_home_color"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/evaluate_user_value_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="王晓晓"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/evaluate_date_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="3dp"
+                android:text="2015.07.27 15:30"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/evaluate_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="环境还不错，不过距离公交站还是有点远的，开车去会方便不少呢。周末晚上人不是特别多。不过据说下雨天会漏水打不了哦，这个要注意下。总体来说团购蛮划算的。"
+            android:textSize="@dimen/text_size_13"
+            android:textColor="@color/text_home_color" />
+    </LinearLayout>
+
+</LinearLayout>

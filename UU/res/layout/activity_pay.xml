@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_court_choose" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@color/tab_view_press" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="@color/white"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/order_merchant_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="UU运动。前景羽毛球馆" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/tid_order_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tname_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="1号馆"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tid_time_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="14：00--15：00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/tid_order_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tname_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="2号馆"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tid_time_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="14：00--15：00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/tid_order_view3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tname_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="3号馆"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tid_time_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="14：00--15：00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/tid_order_view4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tname_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="4号馆"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tid_time_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="14：00--15：00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/order_names_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="@string/order_date"
+                    android:textColor="@color/text_home_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/order_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="2015-06-09（周二）" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@color/tab_view_press" />
+
+        <RelativeLayout
+            android:id="@+id/jifen_container"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/jifen_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/still_pay"
+                android:textColor="@color/text_home_color" />
+
+            <TextView
+                android:id="@+id/totle_order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/jifen_text"
+                android:layout_marginRight="42dp"
+                android:text="30元"
+                android:textColor="@color/text_black" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/submit_order_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/tab_view_press" >
+
+                <TextView
+                    android:id="@+id/pay_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/ten_pay"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/main_gray" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+            <com.huiyoumall.uu.widget.MyRadioGroup
+                android:id="@+id/pay_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/alipayke_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white" >
+
+                    <ImageView
+                        android:id="@+id/alipayke_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="33dp"
+                        android:src="@drawable/ic_pay_alipay" />
+
+                    <TextView
+                        android:id="@+id/alipayke_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:layout_toRightOf="@+id/alipayke_image"
+                        android:text="@string/ali_pay"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <RadioButton
+                        android:id="@+id/alipay_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="42dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp" />
+
+                <RelativeLayout
+                    android:id="@+id/weixinpay_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white" >
+
+                    <ImageView
+                        android:id="@+id/weixinpay_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="33dp"
+                        android:src="@drawable/ic_pay_wechat" />
+
+                    <TextView
+                        android:id="@+id/weixinpay_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:layout_toRightOf="@+id/weixinpay_image"
+                        android:text="@string/wechat_pay"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <RadioButton
+                        android:id="@+id/weixinpay_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="42dp" />
+                </RelativeLayout>
+            </com.huiyoumall.uu.widget.MyRadioGroup>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="@color/tab_view_press" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tab_view_press"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/btn_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/main_color"
+                    android:text="@string/ensure_pay" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

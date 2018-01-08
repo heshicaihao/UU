@@ -1,0 +1,463 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/title_details" />
+
+    <com.huiyoumall.uu.widget.EmptyLayout
+        android:id="@+id/detail_empter_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.huiyoumall.uu.widget.EmptyLayout>
+
+    <ScrollView
+        android:id="@+id/huodong_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:padding="15dp" >
+
+                <FrameLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical" >
+
+                    <com.huiyoumall.uu.image.SmartImageView
+                        android:id="@+id/huodong_member_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_fitness_normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_vertical"
+                        android:background="#80FFFFFF"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/member_age_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_female"
+                            android:drawablePadding="5dp"
+                            android:text="23岁"
+                            android:textColor="@color/text_home_color"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="王二小"
+                            android:textColor="@color/main_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/huodong_count_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="@string/huodong_count"
+                            android:textColor="@color/text_home_color" />
+
+                        <TextView
+                            android:id="@+id/join_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="2"
+                            android:textColor="@color/text_home_color" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_horizontal_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_activity_name"
+                        android:drawablePadding="5dp"
+                        android:text="@string/huodong_name"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/huodong_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="羽动全身"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_activity_project"
+                        android:drawablePadding="5dp"
+                        android:text="@string/huodong_project"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/huodong_project_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="羽毛球"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_activitydetail_time"
+                        android:drawablePadding="5dp"
+                        android:text="@string/huodong_time"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/huodong_date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="周三"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_activity_venue"
+                        android:drawablePadding="5dp"
+                        android:text="@string/huodong_merchant"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/huodong_merchant_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="百富羽毛球馆"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_activity_people_num"
+                        android:drawablePadding="5dp"
+                        android:text="@string/huodong_people_num"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/huodong_people_num_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="10人"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_activity_theme"
+                        android:drawablePadding="5dp"
+                        android:text="@string/huodong_theme"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/huodong_theme_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="@string/random_play"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_activity_charge"
+                        android:drawablePadding="5dp"
+                        android:text="@string/huodong_charge"
+                        android:textColor="@color/text_home_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/huodong_price_type_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="@string/aa"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/huodong_consume_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="10"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="@string/per_yuan_per_person"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_horizontal_line" />
+
+            <LinearLayout
+                android:id="@+id/join_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/huodong_actor"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_18" />
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <com.huiyoumall.uu.widget.GridViewForScollView
+                            android:id="@+id/huodong_join_gridview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:scrollbars="none"
+                            android:gravity="center"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="spacingWidthUniform" >
+                        </com.huiyoumall.uu.widget.GridViewForScollView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <include layout="@layout/view_horizontal_line" />
+
+            <LinearLayout
+                android:id="@+id/apply_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/huodong_sign_up"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_18" />
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <com.huiyoumall.uu.widget.GridViewForScollView
+                            android:id="@+id/huodong_apply_gridview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:scrollbars="none"
+                            android:gravity="center"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="spacingWidthUniform" >
+                        </com.huiyoumall.uu.widget.GridViewForScollView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <include layout="@layout/view_horizontal_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/huodong_explain"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_18" />
+
+                <TextView
+                    android:id="@+id/huodong_information_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_text_dark"
+                    android:textSize="@dimen/text_size_14" />
+
+                <RelativeLayout
+                    android:id="@+id/unfold_tbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="38.5dp"
+                    android:background="@drawable/bg_search"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/unfold_value_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableRight="@drawable/ic_activity_place"
+                        android:gravity="center"
+                        android:text="@string/unfold"
+                        android:textColor="@color/text_home_color" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_huodong_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="20dp" >
+
+                    <Button
+                        android:id="@+id/json_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="38.5dp"
+                        android:background="@drawable/bg_book_press"
+                        android:text="@string/now_participation"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

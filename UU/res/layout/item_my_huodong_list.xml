@@ -1,0 +1,229 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popular_view_bg"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical" >
+
+            <com.huiyoumall.uu.image.SmartImageView
+                android:id="@+id/member_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_empty_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_vertical"
+                android:background="#80FFFFFF"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/member_age_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_female"
+                    android:drawablePadding="5dp"
+                    android:text="23岁"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/member_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="王二小"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/huodong_sports_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_activity" />
+
+            <TextView
+                android:id="@+id/houdong_project_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="羽你共欢乐（羽毛球）"
+                android:textColor="@color/text_home_color"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/houdong_theme_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_favorable"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/random_play"
+                android:textColor="@color/main_color"
+                android:textSize="7sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/houdong_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_activity_time"
+                android:drawablePadding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="周二"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/houdong_merchant_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_activity_place"
+                android:drawablePadding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="百富羽毛球馆"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:id="@+id/houdong_distance_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="right|bottom"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="1.79km"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/houdong_price_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_activity_price"
+                android:drawablePadding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="AA"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:id="@+id/houdong_consume_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="10"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/per_yuan_per_person"
+                android:textColor="@color/main_text_dark"
+                android:textSize="@dimen/text_size_13" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|top" >
+
+                <TextView
+                    android:id="@+id/houdong_join_people_num_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="10"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oblique_line"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/huodong_totle_people_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/huodong_level_hint"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/wechat"
+        style="@style/home_color_shopping_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_weight="1.0"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_wechat_share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5.0dip"
+            android:text="微信"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wechatmoment"
+        style="@style/home_color_shopping_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_weight="1.0"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_wechatment_share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5.0dip"
+            android:text="朋友圈"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qq"
+        style="@style/home_color_shopping_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_weight="1.0"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_qq_share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="3.0dip"
+            android:text="QQ"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qzone"
+        style="@style/home_color_shopping_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_weight="1.0"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_qzone_share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="3.0dip"
+            android:text="QQ空间"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sinaweibo"
+        style="@style/home_color_shopping_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_weight="1.0"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_sina_share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="3.0dip"
+            android:text="新浪微博"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+</LinearLayout>

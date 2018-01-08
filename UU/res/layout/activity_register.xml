@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_activity" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="38.5dp"
+            android:layout_marginBottom="16.3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp" >
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_search"
+                android:gravity="center_vertical"
+                android:hint="@string/input_telephone_init"
+                android:inputType="phone"
+                android:paddingLeft="13.3dp"
+                android:paddingRight="35.6dp"
+                android:singleLine="true"
+                android:textColor="@color/text_home_color"
+                android:textColorHint="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/input_delete"
+                android:layout_width="16.3dp"
+                android:layout_height="16.3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13.3dp"
+                android:src="@drawable/input_delete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16.3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" >
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="154.4dp"
+                android:layout_height="38.5dp"
+                android:background="@drawable/bg_search"
+                android:gravity="center_vertical"
+                android:hint="@string/input_code_init"
+                android:inputType="number"
+                android:paddingLeft="13.3dp"
+                android:textColor="@color/text_home_color"
+                android:textColorHint="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/get_code"
+                android:layout_width="120sp"
+                android:layout_height="38.5dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_book_press"
+                android:gravity="center"
+                android:text="@string/send_code"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="38.5dp"
+            android:layout_marginBottom="16.3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" >
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_search"
+                android:gravity="center_vertical"
+                android:hint="@string/password_to_user_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="13.3dp"
+                android:textColor="@color/text_home_color"
+                android:textColorHint="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/input_passs_delete"
+                android:layout_width="16.3dp"
+                android:layout_height="16.3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13.3dp"
+                android:src="@drawable/input_delete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="38.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" >
+
+            <EditText
+                android:id="@+id/repead_password"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_search"
+                android:gravity="center_vertical"
+                android:hint="@string/password_to_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="13.3dp"
+                android:textColor="@color/text_home_color"
+                android:textColorHint="@color/main_text_dark"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/input_repeadpasss_delete"
+                android:layout_width="16.3dp"
+                android:layout_height="16.3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13.3dp"
+                android:src="@drawable/input_delete" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/user_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13.3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13.3dp"
+            android:gravity="left|center" >
+
+            <ImageView
+                android:id="@+id/check"
+                android:layout_width="13.3dp"
+                android:layout_height="13.3dp"
+                android:src="@drawable/checked_2" />
+
+            <TextView
+                android:id="@+id/user_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.9dp"
+                android:text="@string/i_see_and_agree"
+                android:textColor="@color/text_home_color"
+                android:textSize="@dimen/text_size_14"  />
+
+            <TextView
+                android:id="@+id/user_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uu_treaty"
+                android:textColor="@color/can_reservation"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="38.5dp"
+                android:background="@drawable/bg_book_press"
+                android:text="@string/register"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

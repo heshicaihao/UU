@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/venue_name_text"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="海旺羽毛球场"
+                android:textColor="@color/text_home_color"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/venue_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="2015-07-01"
+                android:textColor="@color/text_home_color"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/venue_minute_container"
+            android:baselineAligned="false" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/venue_num_container01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/venue_num_text01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="VIP1场"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/venue_time_text01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="15:00-16:00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/venue_num_container02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/venue_num_text02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="VIP1场"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/venue_time_text02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="15:00-16:00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/venue_num_container03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/venue_num_text03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="VIP1场"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/venue_time_text03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="15:00-16:00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/venue_num_container04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/venue_num_text04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="VIP1场"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/venue_time_text04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="15:00-16:00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/site02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/venue_name_text02"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="海旺羽毛球场"
+                android:textColor="@color/text_home_color"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/venue_date_text02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="2015-07-01"
+                android:textColor="@color/text_home_color"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/venue_minute_container02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/venue_num_container21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/venue_num_text21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="VIP1场"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/venue_time_text21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="15:00-16:00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/venue_num_container22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/venue_num_text22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="VIP1场"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/venue_time_text22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="15:00-16:00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/venue_num_container23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/venue_num_text23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="VIP1场"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/venue_time_text23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="15:00-16:00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/venue_num_container24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/venue_num_text24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="VIP1场"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/venue_time_text24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="15:00-16:00"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

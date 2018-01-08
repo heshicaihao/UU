@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_activity" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:background="@color/tab_view_press" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:textColor="@color/text_home_color"
+            android:text="@string/dingweichengshi" >
+        </TextView>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_loctioncity_normal"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            />
+
+    </RelativeLayout>
+       <TextView
+        android:id="@+id/city_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/subscribe_item_bg"
+        android:gravity="center"
+        android:minHeight="38.0dip"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:minWidth="72.0dip"
+        android:textColor="@color/subscribe_item_text_color"
+        android:textSize="14.0sp" />
+    
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:layout_marginTop="10dp"
+        android:background="@color/tab_view_press" >
+
+        <TextView
+            android:id="@+id/all_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_home_color"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:text="@string/all_city" >
+        </TextView>
+    </RelativeLayout>
+   
+   
+     <com.huiyoumall.uu.widget.GridViewForScollView
+            android:id="@+id/select_city_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="8dip" />
+    
+
+    <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text_home_color"
+        android:text="@string/more_city" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/main_color"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/activity_back"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_title_wrapper_background"
+        android:onClick="activitybackview"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back_normal" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="标题"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_21" />
+
+    <TextView
+        android:id="@+id/right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:text="右键"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_21" />
+
+</RelativeLayout>

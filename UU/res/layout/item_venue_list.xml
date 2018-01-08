@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" 
+    android:paddingTop="15dp" 
+    android:paddingBottom="15dp"  >
+
+    <RelativeLayout
+        android:id="@+id/venue_rl02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/venue_rl01" >
+
+        <TextView
+            android:id="@+id/merchant_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/venue_rise_text"
+            android:textSize="17dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/main_color"
+            android:text="¥35" />
+
+        <TextView
+            android:id="@+id/venue_rise_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/merchant_shop_price"
+            android:layout_alignBottom="@+id/merchant_shop_price"
+            android:layout_toLeftOf="@+id/merchant_mark_price"
+            android:text="起"
+            android:paddingRight="10dp"
+            android:textColor="@color/main_text_dark"
+            android:textSize="@dimen/text_size_12"  />
+
+        <TextView
+            android:id="@+id/merchant_mark_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/merchant_shop_price"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/main_text_dark"
+            android:textSize="@dimen/text_size_12" 
+            android:text="¥80" />
+
+        <TextView
+            android:id="@+id/merchant_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/merchant_shop_price"
+            android:layout_toRightOf="@+id/venue_address_image"
+            android:textColor="@color/main_text_dark"
+            android:textSize="@dimen/text_size_12"
+            android:text="38.27km" />
+
+        <TextView
+            android:id="@+id/merchant_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/merchant_shop_price"
+            android:layout_alignBottom="@+id/merchant_shop_price"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="10dp"
+            android:text="[双龙|南联]"
+            android:textColor="@color/main_text_dark"
+            android:textSize="@dimen/text_size_12" />
+
+        <ImageView
+            android:id="@+id/venue_address_image"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/merchant_address"
+            android:layout_toRightOf="@+id/merchant_address"
+            android:scaleType="fitXY"
+            android:paddingRight="3dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/ic_distance_n" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/venue_rl01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="10dp"
+            android:text="海旺羽毛球馆"
+            android:textColor="@color/text_home_color"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/favorable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_alignBottom="@+id/merchant_name"
+            android:layout_toRightOf="@+id/merchant_name"
+            android:background="@drawable/book_selector"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:text="多优惠"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size_10" />
+
+        <ImageView
+            android:id="@+id/venue_fen_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/favorable_text"
+            android:layout_toLeftOf="@+id/merchant_point"
+            android:scaleType="fitXY"
+            android:paddingRight="3dp"
+            android:src="@drawable/ic_grade_50" />
+
+        <TextView
+            android:id="@+id/merchant_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/venue_fen_image"
+            android:textColor="@color/main_text_dark"
+            android:textSize="@dimen/text_size_12" 
+            android:text="5.0分" />
+    </RelativeLayout>
+
+</RelativeLayout>

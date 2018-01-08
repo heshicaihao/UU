@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout android:id="@+id/home"
+		android:layout_width="fill_parent" android:layout_height="50dp"
+		android:background="@color/main_color" android:orientation="horizontal">
+		<ImageButton android:id="@+id/activity_back"
+			android:layout_width="50dp" android:layout_height="fill_parent"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/bg_title_wrapper_background"
+			android:onClick="activitybackview" android:scaleType="centerInside"
+			android:src="@drawable/ic_back_normal"/>
+		<TextView android:id="@+id/title" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:text="@string/order_detail" android:textAppearance="?android:textAppearanceMedium"
+			android:textColor="@color/white" android:textSize="@dimen/text_size_21"/>
+		<ImageView android:id="@+id/order_details_share"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerInParent="true"
+			android:paddingLeft="5dp" android:paddingRight="10dp" android:src="@drawable/btn_share"/>
+	</RelativeLayout>
+	<LinearLayout android:id="@+id/no_pay_lin"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:background="@color/white">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="38dp" android:orientation="horizontal"
+			android:gravity="center" android:background="@color/list_divider_color">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/ic_notice"/>
+			<TextView android:layout_width="wrap_content"
+				android:layout_marginLeft="3dp" android:layout_height="wrap_content"
+				android:text="请在十分钟内完成付款，逾期场地不保留！" android:textColor="@color/main_color"/>
+		</LinearLayout>
+		<Button android:id="@+id/btn_pay_now" android:layout_width="match_parent"
+			android:layout_height="38.5dp" android:background="@drawable/bg_book_press"
+			android:text="立即支付" android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp" android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp" android:textSize="@dimen/text_size_14"
+			android:textColor="@color/white"/>
+		<View android:layout_width="match_parent" android:layout_height="5dp"
+			android:background="@color/list_divider"/>
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gravity="center"
+		android:orientation="vertical">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:background="@color/white">
+				<TextView android:id="@+id/merchant_name"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:paddingBottom="10dp" android:paddingLeft="20dp"
+					android:paddingTop="10dp" android:text="UU运动.前进羽毛球馆"
+					android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_16"/>
+				<include layout="@layout/view_horizontal_line"/>
+				<RelativeLayout android:id="@+id/merchant_address_lin"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:background="@color/white">
+					<TextView android:id="@+id/merchant_address"
+						android:layout_width="match_parent" android:layout_height="wrap_content"
+						android:layout_centerVertical="true" android:layout_toLeftOf="@+id/turn_right"
+						android:paddingBottom="10dp" android:paddingLeft="20dp"
+						android:paddingTop="10dp" android:text="后海大金丝胡同4号(银锭桥南)"
+						android:textColor="@color/main_text_dark" android:textSize="@dimen/text_size_16"/>
+					<ImageView android:id="@+id/turn_right"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true" android:padding="10dp"
+						android:src="@drawable/ic_turn_right"/>
+				</RelativeLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:layout_height="5dp"
+				android:background="@color/list_divider"/>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+				<LinearLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:background="@color/white"
+					android:orientation="horizontal">
+					<TextView android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:paddingBottom="10dp" android:paddingTop="10dp"
+						android:paddingLeft="20dp" android:text="消费明细" android:textColor="@color/text_home_color"
+						android:textSize="@dimen/text_size_16"/>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:orientation="horizontal">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:id="@+id/sport_name"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="羽毛球馆" android:textColor="@color/main_text_dark"
+							android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white">
+						<TextView android:id="@+id/book_date"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_margin="10dp" android:text="（周四）2015-06-11"
+							android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:id="@+id/order_view1"
+				    android:visibility="gone"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_gravity="center" android:orientation="horizontal">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:id="@+id/tid_name1"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="1号场" android:textColor="@color/main_text_dark"
+							android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white" android:orientation="horizontal">
+						<TextView android:id="@+id/tid_time1"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_margin="10dp" android:text="16:00-17:00"
+							android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+						<TextView android:id="@+id/tid_price1"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_margin="10dp" android:text="15元"
+							android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:id="@+id/order_view2"
+				    android:visibility="gone"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_gravity="center" android:orientation="horizontal">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:id="@+id/tid_name2"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="2号场" android:textColor="@color/main_text_dark"
+							android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white">
+						<LinearLayout android:layout_width="0dp"
+							android:layout_height="wrap_content" android:layout_weight="2.0"
+							android:background="@color/white" android:orientation="horizontal">
+							<TextView android:id="@+id/tid_time2"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_margin="10dp" android:text="16:00-17:00"
+								android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+							<TextView android:id="@+id/tid_price2"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_margin="10dp" android:text="15元"
+								android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:id="@+id/order_view3"
+				    android:visibility="gone"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_gravity="center" android:orientation="horizontal">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:id="@+id/tid_name3"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="3号场" android:textColor="@color/main_text_dark"
+							android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white">
+						<LinearLayout android:layout_width="0dp"
+							android:layout_height="wrap_content" android:layout_weight="2.0"
+							android:background="@color/white" android:orientation="horizontal">
+							<TextView android:id="@+id/tid_time3"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_margin="10dp" android:text="16:00-17:00"
+								android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+							<TextView android:id="@+id/tid_price3"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_margin="10dp" android:text="15元"
+								android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:id="@+id/order_view4"
+				    android:visibility="gone"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_gravity="center" android:orientation="horizontal">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:id="@+id/tid_name4"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="4号场" android:textColor="@color/main_text_dark"
+							android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white">
+						<LinearLayout android:layout_width="0dp"
+							android:layout_height="wrap_content" android:layout_weight="2.0"
+							android:background="@color/white" android:orientation="horizontal">
+							<TextView android:id="@+id/tid_time4"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_margin="10dp" android:text="16:00-17:00"
+								android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+							<TextView android:id="@+id/tid_price4"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_margin="10dp" android:text="15元"
+								android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:orientation="horizontal">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="订单金额"
+							android:textColor="@color/main_text_dark" android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white">
+						<LinearLayout android:layout_width="0dp"
+							android:layout_height="wrap_content" android:layout_weight="2.0"
+							android:background="@color/white" android:orientation="horizontal">
+							<TextView android:id="@+id/order_price"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_margin="10dp" android:text="15元"
+								android:drawableRight="@drawable/ic_notice"
+								android:drawablePadding="5dp" android:textColor="@color/main_color"
+								android:textSize="@dimen/text_size_18"/>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:layout_height="5dp"
+				android:background="@color/list_divider"/>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+				<LinearLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:background="@color/white"
+					android:orientation="horizontal">
+					<TextView android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:paddingBottom="10dp" android:paddingTop="10dp"
+						android:paddingLeft="20dp" android:text="订单详情" android:textColor="@color/text_home_color"
+						android:textSize="@dimen/text_size_16"/>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:orientation="horizontal" android:visibility="gone">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="消费验证码"
+							android:textColor="@color/main_text_dark" android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white">
+						<TextView android:id="@+id/order_code"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_margin="10dp" android:text="45001383"
+							android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:orientation="horizontal">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="订单号"
+							android:textColor="@color/main_text_dark" android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white" android:orientation="horizontal">
+						<TextView android:id="@+id/order_numm"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_margin="10dp" android:text="100021254875"
+							android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:orientation="horizontal">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="下单时间"
+							android:textColor="@color/main_text_dark" android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white">
+						<LinearLayout android:layout_width="0dp"
+							android:layout_height="wrap_content" android:layout_weight="2.0"
+							android:background="@color/white" android:orientation="horizontal">
+							<TextView android:id="@+id/order_date"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_margin="10dp" android:text="2015-07-27 11:12:04"
+								android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<include layout="@layout/view_horizontal_line"/>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:orientation="horizontal">
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="fill_parent" android:layout_gravity="center"
+						android:layout_weight="1.0" android:background="@color/white"
+						android:paddingLeft="20dp" android:gravity="left|center"
+						android:orientation="horizontal">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="订单状态"
+							android:textColor="@color/main_text_dark" android:textSize="@dimen/text_size_14"/>
+					</LinearLayout>
+					<View android:layout_width="1dp" android:layout_height="fill_parent"/>
+					<LinearLayout android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="2.0"
+						android:background="@color/white">
+						<LinearLayout android:layout_width="0dp"
+							android:layout_height="wrap_content" android:layout_weight="2.0"
+							android:background="@color/white" android:orientation="horizontal">
+							<TextView android:id="@+id/pay_status"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_margin="10dp" android:text="未支付"
+								android:textColor="@color/text_home_color" android:textSize="@dimen/text_size_14"/>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_court_choose" />
+
+    <HorizontalScrollView
+        android:id="@+id/court_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/date_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <include layout="@layout/view_merchant_price" />
+
+    <LinearLayout
+        android:id="@+id/hide_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="@color/can_reservation" >
+            </TextView>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/can_yuding" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="@color/already_booked" >
+            </TextView>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/yuding_ed" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="@color/my_booked" >
+            </TextView>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/me_yuding" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/order_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="3dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="8dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/btn_pay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/choose_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/choose_field"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/choose_field_ad"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+</LinearLayout>

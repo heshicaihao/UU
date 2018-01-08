@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/venue_num_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIP1场"
+        android:textColor="@color/text_home_color"
+        android:textSize="@dimen/text_size_15" />
+
+    <TextView
+        android:id="@+id/venue_time_text"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:00-16:00"
+        android:textColor="@color/text_home_color"
+        android:textSize="@dimen/text_size_14" />
+
+
+</LinearLayout>

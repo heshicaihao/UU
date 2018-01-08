@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_subscribe"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/item_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="38.0dip"
+        android:minWidth="72.0dip"
+        android:text="默认排序"
+        android:layout_centerInParent="true"
+        android:textColor="@color/subscribe_item_text_color"
+        android:textSize="@dimen/text_size_18" />
+ 
+</RelativeLayout>

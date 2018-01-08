@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.huiyoumall.uu.widget.EmptyLayout
+            android:id="@+id/home_empter_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.huiyoumall.uu.widget.EmptyLayout>
+    </FrameLayout>
+
+    <com.huiyoumall.uu.widget.MyScrollView
+        android:id="@+id/book_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="155dip"
+                android:orientation="vertical" >
+
+                <com.huiyoumall.uu.ad.ViewFlow
+                    android:id="@+id/viewflow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:padding="3dip" >
+
+                    <com.huiyoumall.uu.ad.CircleFlowIndicator
+                        android:id="@+id/viewflowindic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:padding="2dip"
+                        app:activeColor="#ffffff"
+                        app:activeType="fill"
+                        app:circleSeparation="8dip"
+                        app:inactiveColor="#939393"
+                        app:inactiveType="fill"
+                        app:radius="2dip" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/list_divider" />
+
+            <LinearLayout
+                android:id="@+id/minc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dip"
+                android:background="@color/white" >
+
+                <com.huiyoumall.uu.widget.GridViewForScollView
+                    android:id="@+id/gv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:verticalSpacing="8dip" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/list_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/hot_view"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/popular_view_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/hot_huodong_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:drawableLeft="@drawable/ic_popular_view"
+                        android:drawablePadding="8dp"
+                        android:text="@string/hot_merchant"
+                        android:textColor="@color/subscribe_item_text_color"
+                        android:textSize="@dimen/text_size_18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/huodong_view"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/popular_view_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/friend_huodong_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:drawableLeft="@drawable/ic_nearly_view"
+                        android:drawablePadding="8dp"
+                        android:text="@string/nearby_huodong"
+                        android:textColor="@color/subscribe_item_text_color"
+                        android:textSize="@dimen/text_size_18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/list_divider" />
+
+            <com.huiyoumall.uu.widget.ListViewForScrollView
+                android:id="@+id/hot_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#FFF4F4F4"
+                android:dividerHeight="0.0dip"
+                android:fadingEdge="none" >
+            </com.huiyoumall.uu.widget.ListViewForScrollView>
+
+            <com.huiyoumall.uu.widget.ListViewForScrollView
+                android:id="@+id/near_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#FFF4F4F4"
+                android:dividerHeight="0.0dip"
+                android:fadingEdge="none"
+                android:visibility="gone" >
+            </com.huiyoumall.uu.widget.ListViewForScrollView>
+        </LinearLayout>
+    </com.huiyoumall.uu.widget.MyScrollView>
+
+</RelativeLayout>

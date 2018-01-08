@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical" >
+
+    <!-- 标题容器：三个标题 -->
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+       <LinearLayout
+            android:id="@+id/select_city_show"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/select_city_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="深圳"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/Search_city_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/search_city_change" />
+        </LinearLayout>
+        
+
+        <RelativeLayout
+            android:id="@+id/search_lin"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="left|center"
+            android:background="@drawable/bg_home_search" >
+
+            <ImageView
+                android:id="@+id/search_img"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_search_normal" />
+
+            <TextView
+                android:id="@+id/cg_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/search_img"
+                android:text="请输入场馆名字"
+                android:textColor="@color/white"
+                android:alpha="0.4"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/web_map" 
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            >
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/ic_navigation"
+            android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_21" />
+    </LinearLayout>
+
+</LinearLayout>

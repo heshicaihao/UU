@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//assets/city4.json=UTF-8
+encoding//src/com/huiyoumall/uu/AppConfig.java=UTF-8
+encoding//src/com/huiyoumall/uu/activity/MerchantDetailsActivity.java=UTF-8
+encoding//src/com/huiyoumall/uu/activity/ReserveMerchantActivity.java=UTF-8
+encoding//src/com/huiyoumall/uu/activity/SearchListAcityity.java=UTF-8
+encoding//src/com/huiyoumall/uu/adapter/PopularMerchantAdapter.java=UTF-8
+encoding//src/com/huiyoumall/uu/adapter/SportsListAdapter.java=UTF-8
+encoding//src/com/huiyoumall/uu/common/WheelView.java=UTF-8
+encoding//src/com/huiyoumall/uu/frament/HuoDongActivity.java=UTF-8
+encoding//src/com/huiyoumall/uu/util/AbViewUtil.java=UTF-8
+encoding//src/com/huiyoumall/uu/util/DateUtil.java=UTF-8
+encoding//src/com/huiyoumall/uu/view/pullview/AbListViewFooter.java=UTF-8
+encoding//src/com/huiyoumall/uu/view/pullview/AbListViewHeader.java=UTF-8
+encoding//src/com/huiyoumall/uu/view/pullview/AbPullToRefreshView.java=UTF-8
+encoding//src/com/huiyoumall/uu/widget/MyScrollView.java=UTF-8
+encoding/<project>=GBK

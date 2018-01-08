@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/shousl"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:onClick="onclickBack" >
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_back_press" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/auto_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_search"
+            android:drawableLeft="@drawable/ic_search_press"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="@string/edit_search_hint"
+            android:singleLine="true"
+            android:textColor="#74affb"
+            android:textSize="@dimen/text_size_16" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_selector"
+            android:focusable="false"
+            android:text="@string/search"
+            android:textColor="@color/search_text_color" />
+    </LinearLayout>
+
+    <com.huiyoumall.uu.widget.GridViewForScollView
+        android:id="@+id/mark_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="14dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="14.0px" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/auto_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/clear_his_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/clear_history" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_layout_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd" />
+
+    <ListView
+        android:id="@+id/find_list_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#FFF4F4F4"
+        android:scrollbars="none"
+        android:dividerHeight="0.0dip"
+        android:fadingEdge="none" >
+    </ListView>
+
+    <com.huiyoumall.uu.widget.EmptyLayout
+        android:id="@+id/friend_empter_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.huiyoumall.uu.widget.EmptyLayout>
+
+    <RelativeLayout
+        android:id="@+id/book_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/translucent_color"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_head_portrait" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="目前还没有热门的活动"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/text_size_18" />
+
+            <Button
+                android:id="@+id/reserve_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/book_selector"
+                android:focusable="false"
+                android:text="立即预订"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

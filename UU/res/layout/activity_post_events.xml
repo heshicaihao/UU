@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_activity" />
+
+    <com.huiyoumall.uu.widget.EmptyLayout
+        android:id="@+id/post_empter_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.huiyoumall.uu.widget.EmptyLayout>
+
+    <RelativeLayout
+        android:id="@+id/book_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/translucent_color"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_head_portrait" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/no_merchant"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/text_size_18" />
+
+            <Button
+                android:id="@+id/reserve_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/book_selector"
+                android:focusable="false"
+                android:text="@string/now_yuding"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/no_merchant"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/click"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="20dp" >
+
+                    <Button
+                        android:id="@+id/btn_yuding"
+                        android:layout_width="55dp"
+                        android:layout_height="32dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/book_selector"
+                        android:focusable="false"
+                        android:text="@string/yuding"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/list_divider" />
+
+            <com.huiyoumall.uu.widget.ListViewForScrollView
+                android:id="@+id/dingdan_list"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:cacheColorHint="#FFF4F4F4"
+                android:dividerHeight="0.0dip"
+                android:fadingEdge="none" >
+            </com.huiyoumall.uu.widget.ListViewForScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/post_events_hint"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size_12" />
+
+            <include layout="@layout/view_option_huodong" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp" >
+
+                <Button
+                    android:id="@+id/btn_post_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_book_press"
+                    android:text="@string/fast_post_events"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

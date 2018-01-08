@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_court_choose" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38.5dp"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/nick_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_search"
+            android:drawableLeft="@drawable/ic_activity_time"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="@string/nick_name"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="35.6dp"
+            android:singleLine="true"
+            android:textColor="@color/text_home_color"
+            android:textColorHint="@color/main_text_dark"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/input_account_delete"
+            android:layout_width="16.3dp"
+            android:layout_height="16.3dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13.3dp"
+            android:src="@drawable/input_delete" />
+    </RelativeLayout>
+
+</LinearLayout>

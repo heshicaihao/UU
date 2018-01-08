@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl001"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/jl_name_image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/image_empty_bg" />
+
+        <TextView
+            android:id="@+id/jies_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jl_name_image"
+            android:layout_alignLeft="@+id/jl_name_text"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/xin_image"
+            android:text="瑜伽，你生命中不可缺少的部分。你生命中不可缺少的部分呀。" />
+
+        <TextView
+            android:id="@+id/ping_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="1人评价" />
+
+        <TextView
+            android:id="@+id/jl_didian_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jl_didian_image"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/jl_didian_image"
+            android:textSize="10sp"
+            android:text="900m" />
+
+        <ImageView
+            android:id="@+id/xin_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/jies_text"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_grade_50" />
+
+        <ImageView
+            android:id="@+id/jl_didian_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jl_name_text"
+            android:layout_alignLeft="@+id/ping_text"
+            android:src="@drawable/ic_distance" />
+
+        <TextView
+            android:id="@+id/jl_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/xin_image"
+            android:layout_toRightOf="@+id/jl_name_image"
+            android:text="陈伊伊"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/jl_six_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jl_name_text"
+            android:layout_toRightOf="@+id/jl_name_text"
+            android:src="@drawable/ic_activity_place" />
+        
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/lineli01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl001"
+        android:background="@color/list_divider"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl002"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/lineli01"
+         >
+
+        <TextView
+            android:id="@+id/qi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/yundong_name_text"
+            android:layout_alignBottom="@+id/yundong_name_text"
+            android:layout_alignParentRight="true"
+            android:textColor="#939393"
+            android:textSize="20sp"
+            android:text="  起" />
+
+        <TextView
+            android:id="@+id/jl_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/qi_text"
+            android:layout_alignBottom="@+id/qi_text"
+            android:layout_toLeftOf="@+id/qi_text"
+            android:textColor="#f28f4c"
+            android:textSize="20sp"
+            android:text="¥150.0" />
+
+        <TextView
+            android:id="@+id/yundong_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:textSize="20sp"
+            android:text="瑜伽" />
+        
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

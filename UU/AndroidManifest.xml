@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huiyoumall.uu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.huiyoumall.uu.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <!-- 地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="8e336edd64c03fd88e8e3ad9ca941f4b" />
+
+        <activity
+            android:name="com.huiyoumall.uu.activity.StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.frament.BookActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.frament.HuoDongActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.frament.FindCoachActiviy"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.frament.MiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.SearchMerchantActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.SearchListAcityity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.ChoiceSiteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MerchantDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MapLoactionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MapLocationActivity2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MapNavigationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.UUNaviActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.ImageShowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.JiaolianDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MerchantListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.ReserveMerchantActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.OrderEnsureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.OrderDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.CommentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.FindPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.SettingNewPassWordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.PayHelpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.TreatyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.PostEventsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.HuodongDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.HuodongPersonDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.EditPersonalInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MyOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MyHuodongActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MyCoachActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MyCouponActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.UMallActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MyBrowseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.MyCollectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.SystemInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.URecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.URuleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.NickNameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.PersonSignatureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.AboutUUActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.AccountManageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.SuggestionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.BindingPhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huiyoumall.uu.activity.AmendPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 微信支付 -->
+        <activity
+            android:name="com.huiyoumall.uu.activity.UUPayActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxf2f565574a968187" />
+            </intent-filter>
+        </activity>
+         <!-- 登陆广播 -->
+        <receiver android:name="LoginReceiver" >
+            <intent-filter android:priority = "1000">
+                <action android:name="com.huiyoumall.uu.LOGIN_RECEIVER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 微信广播 -->
+        <receiver android:name=".AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 微信支付end -->
+        <!-- 支付宝start -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- 支付宝end -->
+        <!-- 分享start -->
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+                 如果集成QQ分享，或者使用QQ客户端来进行QQ空间的 分享，须要在此处添加一个对ACTION_VIEW事件的过滤器， 其中的scheme是“tencent”前缀再开发者应用的加上appId。 
+				如果此过滤器不设置，则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent1104745656" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- 分享end -->
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+	 
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 调用电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 分享 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+</manifest>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_activity" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/binding_phone_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:padding="15dp"
+                    android:text="@string/binding_phone"
+                    android:textColor="@color/main_text_dark"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/binding_phone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:text="13544222632"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_turn_right" />
+            </LinearLayout>
+
+            <include layout="@layout/view_horizontal_line" />
+
+            <LinearLayout
+                android:id="@+id/amend_password_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:padding="15dp"
+                    android:text="@string/amend_password"
+                    android:textColor="@color/main_text_dark"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/amend_password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:text="@string/amend"
+                    android:textColor="@color/text_home_color"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_turn_right" />
+            </LinearLayout>
+
+            <include layout="@layout/view_horizontal_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

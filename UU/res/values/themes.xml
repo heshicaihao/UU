@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Base" parent="android:Theme"></style>
+
+    <!--
+         Base platform-dependent theme providing an action bar in a dark-themed 
+		activity.
+    -->
+
+</resources>
